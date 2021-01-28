@@ -3,11 +3,16 @@ using namespace std;
 
 
 int main() {
- enum Choice {No , Yes};
+ int arr[10]; //an array containing ten elements int
 
- Choice choice = No;
- Choice choicey = Yes;
-
- cout << choice <<endl;
- cout << choicey <<endl;
+ char rev[] = "reverse";
+ int i =0 ;
+ while (rev[i] != '\0')
+ i++;
+ cout<<"No of chars: " <<i;
+ while (i > 0)
+ {
+   --i;
+   cout << rev[i];
+ }
 }
