@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void swap (int a, int b){
-  int temp = a;
-  a = b;
-  b = temp;
+void swap (int *a, int *b){
+  int temp = *a;
+  *a = *b;
+  *b = temp;
 
 }
 
@@ -15,4 +15,3 @@ int main() {
  cout<<x<<" / "<<y <<endl;
 }
 
-//in the above , values do not swap because the function cannot access x, y
