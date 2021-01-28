@@ -15,4 +15,4 @@ int main() {
  cout<<x<<" / "<<y <<endl;
 }
 
-//in th
+//in the above , values do not swap because the function cannot access x, y
