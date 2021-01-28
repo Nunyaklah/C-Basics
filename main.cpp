@@ -1,17 +1,18 @@
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-struct CarData{
-  char reg_no[8];
-  char model[30];
-  int year;
-  float mileage;
-};
+void swap (int a, int b){
+  int temp = a;
+  a = b;
+  b = temp;
+
+}
 
 int main() {
- CarData mine, yours;
- mine.year = 2013;
- strcpy(mine.model, "Land Rover");
- yours =mine;
+ int x = 5, y=6;
+ cout<<x<<" / "<<y<<endl;
+ swap(x,y);
+ cout<<x<<" / "<<y <<endl;
 }
+
+//in th
