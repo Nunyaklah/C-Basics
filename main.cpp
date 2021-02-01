@@ -1,17 +1,22 @@
 #include <iostream>
-using namespace std;
+#include <cstring>
+#include <bits/stdc++.h>
 
-void swap (int &a, int &b){
-  int temp = a;
-  a = b;
-  b = temp;
-
-}
 
 int main() {
- int x = 5, y=6;
- cout<<x<<" / "<<y<<endl;
- swap(x,y);
- cout<<x<<" / "<<y <<endl;
+  std::string word;
+  std::cout << "Write out your string"<< std::endl;
+  std::cin>>word;
+  std::cout<<word<<std::endl;
+
+  int n = word.length();
+
+  char arrArray[n+1];
+
+  strcpy(arrArray, word.c_str());
+
+  for (int i = 0; i < n; i++){
+    std::cout << arrArray[i];
+  }
 }
 
